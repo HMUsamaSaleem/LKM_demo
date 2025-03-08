@@ -1,6 +1,6 @@
+from time import sleep
 import re
 import pandas as pd
-from time import sleep
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from transformers import pipeline
@@ -54,4 +54,4 @@ for i, lines in enumerate(first_10_lines_list):
         else:
             df.loc[i, "Lead Arranger/Bookrunner"] = None
 print(df["Lead Arranger/Bookrunner"])
-df.to_csv("C:/Users/PC/Desktop/pixeledge/lkm/dataset/\outputfile/23oct.csv")
+df.to_csv("C:/Users/PC/Desktop/pixeledge/lkm/dataset/outputfile1/23oct.csv")
